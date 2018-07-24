@@ -22,7 +22,7 @@ X_test = sc.transform(X_test)
 
 # Fitting SVM to the Training set
 from sklearn.svm import SVC
-classifier = SVC(kernel = 'linear', random_state = 0)
+classifier = SVC(kernel = 'linear', random_state = 0)  #rbf, sigmoid, poly, ...
 classifier.fit(X_train, y_train)
 
 # Predicting the Test set results
