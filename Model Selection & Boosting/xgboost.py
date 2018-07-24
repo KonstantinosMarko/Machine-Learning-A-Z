@@ -1,5 +1,8 @@
+
+
 # XGBoost
 
+# conda install py-xgboost        <-------
 # Install xgboost following the instructions on this link: http://xgboost.readthedocs.io/en/latest/build.html#
 
 # Importing the libraries
