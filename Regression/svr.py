@@ -23,7 +23,7 @@ y = sc_y.fit_transform(y.reshape(-1, 1))
 
 # Fitting SVR to the dataset
 from sklearn.svm import SVR
-regressor = SVR(kernel = 'rbf')
+regressor = SVR(kernel = 'rbf')  # rbf: gaussian, sigmoid, linear, poly
 regressor.fit(X, y)
 
 # Predicting a new result
