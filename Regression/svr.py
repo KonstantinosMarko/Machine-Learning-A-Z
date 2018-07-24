@@ -18,8 +18,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 from sklearn.preprocessing import StandardScaler
 sc_X = StandardScaler()
 sc_y = StandardScaler()
-X = sc_X.fit_transform(X)
-y = sc_y.fit_transform(y)
+X = sc_X.fit_transform(X.reshape(-1, 1))
+y = sc_y.fit_transform(y.reshape(-1, 1))
 
 # Fitting SVR to the dataset
 from sklearn.svm import SVR
@@ -49,6 +49,3 @@ plt.title('Truth or Bluff (SVR)')
 plt.xlabel('Position level')
 plt.ylabel('Salary')
 plt.show()
-
-from sklearn.metrics import r2_score
-r2_score(y_test,y_pred)
