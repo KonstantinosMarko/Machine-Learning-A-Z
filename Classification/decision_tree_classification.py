@@ -67,3 +67,7 @@ plt.xlabel('Age')
 plt.ylabel('Estimated Salary')
 plt.legend()
 plt.show()
+
+# Predict new example
+predict_new = np.array([[111111, 4444444]])
+new_prediction = classifier.predict(predict_new)
