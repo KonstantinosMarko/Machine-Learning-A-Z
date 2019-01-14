@@ -10,3 +10,5 @@ pip install --upgrade keras
 
 
 https://cntk.ai/pythondocs/tutorials.html
+
+plires sta DL: Translation with a Sequence...
